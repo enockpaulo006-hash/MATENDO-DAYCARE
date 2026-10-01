@@ -1,0 +1,339 @@
+/* =================================
+   MATENDO DAY CARE CENTRE
+   MOBILE-FIRST STYLES
+================================= */
+
+/* 1. Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* 2. Brand styling */
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    line-height: 1.2;
+}
+
+.brand-name small {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* 3. Navigation */
+.navbar {
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 12px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #e67e22;
+}
+
+/* 4. Apply button */
+.btn-apply {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-apply:hover {
+    background-color: #c96512;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* 5. Tablet and desktop adjustments */
+@media (min-width: 768px) {
+    .navbar-brand img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+}
+
+
+/* =================================
+   HERO SECTION - COMPACT DESIGN
+================================= */
+
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    left: 10%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 10px;
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.btn-hero {
+    background-color: #e67e22;
+    color: white;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 12px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .hero-image {
+        height: 300px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .btn-hero {
+        font-size: 14px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    .hero-image {
+        height: 350px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 36px;
+    }
+
+    .carousel-caption p {
+        font-size: 17px;
+    }
+}
+
+/* =================================
+   SCHOOL INTRODUCTION
+================================= */
+
+.school-intro {
+    background-color: #fff;
+}
+
+.section-subtitle {
+    display: inline-block;
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro-content h2 {
+    font-size: 27px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.intro-content p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn-intro {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-intro:hover {
+    background-color: #c96512;
+    color: white;
+}
+
+.intro-image img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Tablet and desktop */
+@media (min-width: 768px) {
+    .intro-content h2 {
+        font-size: 34px;
+    }
+
+    .intro-content p {
+        font-size: 16px;
+    }
+
+    .intro-image img {
+        height: 380px;
+    }
+}
+
+/* =================================
+   PROGRAMS SECTION
+================================= */
+
+.programs-section {
+    background-color: #f8f9fa;
+}
+
+.section-heading h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #666;
+    font-size: 15px;
+}
+
+.program-card {
+    height: 100%;
+    padding: 28px 22px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.program-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background-color: #fff0df;
+    color: #e67e22;
+    font-size: 28px;
+}
+
+.program-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.program-age {
+    display: inline-block;
+    color: #e67e22;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.program-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #d96b13;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.program-card a:hover {
+    color: #a94c08;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .section-heading h2 {
+        font-size: 35px;
+    }
+
+    .program-card {
+        padding: 35px 25px;
+    }
+}
