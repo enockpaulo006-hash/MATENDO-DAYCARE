@@ -337,3 +337,251 @@ body {
         padding: 35px 25px;
     }
 }
+/* =================================
+   WHY CHOOSE US
+================================= */
+
+.why-choose-us {
+    background-color: #fff;
+}
+
+.feature-card {
+    height: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #fffaf4;
+    border-radius: 15px;
+    border: 1px solid #f5e7d7;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e67e22;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Tablet and desktop */
+@media (min-width: 768px) {
+    .feature-card {
+        padding: 35px 25px;
+    }
+
+    .feature-card h3 {
+        font-size: 21px;
+    }
+
+    .feature-card p {
+        font-size: 15px;
+    }
+}
+/* =================================
+   ADMISSION CALL TO ACTION
+================================= */
+
+.admission-cta {
+    padding: 65px 15px;
+    background: linear-gradient(
+        135deg,
+        #e67e22,
+        #c96512
+    );
+    color: #fff;
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.cta-subtitle {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    color: #fff3e6;
+}
+
+.cta-content h2 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cta-primary,
+.cta-secondary {
+    width: 100%;
+    max-width: 250px;
+    padding: 11px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-primary {
+    background: #fff;
+    color: #c96512;
+}
+
+.cta-primary:hover {
+    background: #f5f5f5;
+    color: #a94c08;
+    transform: translateY(-2px);
+}
+
+.cta-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta-secondary:hover {
+    background: #fff;
+    color: #c96512;
+}
+
+/* Tablet and desktop */
+@media (min-width: 768px) {
+    .admission-cta {
+        padding: 80px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 38px;
+    }
+
+    .cta-content p {
+        font-size: 17px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+        width: auto;
+    }
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0 15px;
+}
+
+.site-footer h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.site-footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.site-footer p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-motto {
+    color: #e67e22 !important;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.site-footer a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.site-footer a:hover {
+    color: #e67e22;
+}
+
+.site-footer i {
+    color: #e67e22;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 35px;
+    padding-top: 18px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+/* Tablet and desktop */
+@media (min-width: 768px) {
+    .site-footer {
+        padding-top: 65px;
+    }
+}
