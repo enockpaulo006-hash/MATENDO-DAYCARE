@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admission information and application form for Matendo Day Care Centre, Ushirombo, Bukombe.">
+    <title>Admission | Matendo Day Care Centre</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../assets/images/matendo-logo.png"
+                 alt="Matendo Day Care Centre Logo"
+                 height="55">
+            <span class="ms-2 fw-bold">Matendo Day Care Centre</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                <li class="nav-item"><a class="nav-link" href="teachers.html">Teachers</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="announcements.html">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="admission.html" class="btn btn-warning ms-lg-3 mt-3 mt-lg-0 active">
+                Admission
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="admission-hero">
+    <div class="container">
+        <span class="admission-eyebrow">Join Our Learning Community</span>
+        <h1>Admission at Matendo Day Care Centre</h1>
+        <p>
+            Give your child a caring environment to learn,
+            play, grow and prepare for the future.
+        </p>
+        <a href="#application-form" class="btn btn-warning mt-3">
+            Start Application
+        </a>
+    </div>
+</header>
+
+<main>
+
+    <!-- ADMISSION INFORMATION -->
+    <section class="admission-overview">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Admission Information</h2>
+                <p class="text-muted">
+                    Important details for parents and guardians.
+                </p>
+            </div>
+
+            <div class="admission-info-grid">
+
+                <article class="admission-info-card">
+                    <div class="admission-info-icon">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h3>Admission Year</h3>
+                    <p>2026</p>
+                </article>
+
+                <article class="admission-info-card">
+                    <div class="admission-info-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3>Eligible Ages</h3>
+                    <p>3–5 years</p>
+                </article>
+
+                <article class="admission-info-card">
+                    <div class="admission-info-icon">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h3>Form Fee</h3>
+                    <p>TSh 5,000</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEES -->
+    <section class="admission-fees">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>School Fees and Transport</h2>
+                <p class="text-muted">
+                    Fees listed in the 2026 joining form.
+                </p>
+            </div>
+
+            <div class="admission-fees-wrapper">
+                <div class="table-responsive">
+                    <table class="table admission-fees-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tuition per term</td>
+                                <td>TSh 135,000</td>
+                            </tr>
+                            <tr>
+                                <td>Transport per term (where applicable)</td>
+                                <td>TSh 90,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tuition and transport per term</td>
+                                <td>TSh 225,000</td>
+                            </tr>
+                            <tr>
+                                <td>Application form</td>
+                                <td>TSh 5,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="admission-note">
+                    Transport charges apply only to families using the
+                    school's transport service. Confirm current fees and
+                    payment instructions directly with the school.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+    <section class="admission-form-section" id="application-form">
+        <div class="container">
+            <div class="admission-form-wrapper">
+
+                <div class="admission-form-heading">
+                    <span>Online Application Request</span>
+                    <h2>Child Admission Details</h2>
+                    <p>
+                        Complete the details below to prepare an
+                        admission inquiry for the school.
+                    </p>
+                </div>
+
+                <form id="admissionForm">
+
+                    <h3 class="admission-form-subtitle">
+                        <i class="bi bi-person-fill"></i>
+                        Child Information
+                    </h3>
+
+                    <div class="row g-3">
+
+                        <div class="col-12">
+                            <label for="childName" class="form-label">
+                                Child's Full Name
+                            </label>
+                            <input type="text" id="childName"
+                                   class="form-control"
+                                   placeholder="Enter child's full name"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="dateOfBirth" class="form-label">
+                                Date of Birth
+                            </label>
+                            <input type="date" id="dateOfBirth"
+                                   class="form-control"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="childAge" class="form-label">
+                                Child's Age
+                            </label>
+                            <input type="number" id="childAge"
+                                   class="form-control"
+                                   min="3" max="5"
+                                   placeholder="Age in years"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="childGender" class="form-label">
+                                Gender
+                            </label>
+                            <select id="childGender" class="form-select" required>
+                                <option value="">Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="classApplying" class="form-label">
+                                Class Applying For
+                            </label>
+                            <select id="classApplying" class="form-select" required>
+                                <option value="">Select class</option>
+                                <option>Baby Class</option>
+                                <option>Middle Class 1</option>
+                                <option>Middle Class 2</option>
+                                <option>To be advised by the school</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="residence" class="form-label">
+                                Child's Residence
+                            </label>
+                            <input type="text" id="residence"
+                                   class="form-control"
+                                   placeholder="Street, area or village"
+                                   required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="previousSchool" class="form-label">
+                                Previous School (if any)
+                            </label>
+                            <input type="text" id="previousSchool"
+                                   class="form-control"
+                                   placeholder="Enter previous school or leave blank">
+                        </div>
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h3 class="admission-form-subtitle">
+                        <i class="bi bi-person-lines-fill"></i>
+                        Parent or Guardian Information
+                    </h3>
+
+                    <div class="row g-3">
+
+                        <div class="col-12">
+                            <label for="parentName" class="form-label">
+                                Parent or Guardian Full Name
+                            </label>
+                            <input type="text" id="parentName"
+                                   class="form-control"
+                                   placeholder="Enter full name"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="parentPhone" class="form-label">
+                                Phone Number
+                            </label>
+                            <input type="tel" id="parentPhone"
+                                   class="form-control"
+                                   placeholder="Enter phone number"
+                                   required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="parentEmail" class="form-label">
+                                Email (Optional)
+                            </label>
+                            <input type="email" id="parentEmail"
+                                   class="form-control"
+                                   placeholder="Enter email address">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="guardianAddress" class="form-label">
+                                Parent or Guardian Address
+                            </label>
+                            <input type="text" id="guardianAddress"
+                                   class="form-control"
+                                   placeholder="Enter your address"
+                                   required>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="emergencyContact" class="form-label">
+                                Emergency Contact Name and Phone
+                            </label>
+                            <input type="text" id="emergencyContact"
+                                   class="form-control"
+                                   placeholder="Name and phone number"
+                                   required>
+                        </div>
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h3 class="admission-form-subtitle">
+                        <i class="bi bi-heart-pulse"></i>
+                        Health and Special Care
+                    </h3>
+
+                    <div class="row g-3">
+
+                        <div class="col-12">
+                            <label for="healthInformation" class="form-label">
+                                Medical Conditions, Allergies or Special Care
+                            </label>
+                            <textarea id="healthInformation"
+                                      class="form-control"
+                                      rows="4"
+                                      placeholder="Provide relevant information, or write None"></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="additionalInformation" class="form-label">
+                                Additional Information (Optional)
+                            </label>
+                            <textarea id="additionalInformation"
+                                      class="form-control"
+                                      rows="3"
+                                      placeholder="Any other information for the school"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="admission-consent mt-4">
+                        <input type="checkbox" id="applicationConsent" required>
+                        <label for="applicationConsent">
+                            I confirm that the information provided is
+                            accurate and understand that this is an
+                            admission inquiry, not a confirmed enrollment.
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                            class="btn btn-warning admission-submit-btn mt-4">
+                        <i class="bi bi-whatsapp me-2"></i>
+                        Continue via WhatsApp
+                    </button>
+
+                    <p id="admissionFeedback"
+                       class="admission-feedback mt-3"
+                       role="status"
+                       aria-live="polite"></p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMISSION STEPS -->
+    <section class="admission-steps-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>How to Apply</h2>
+                <p class="text-muted">
+                    Follow these steps to begin the admission process.
+                </p>
+            </div>
+
+            <div class="admission-steps-grid">
+
+                <div class="admission-step">
+                    <span>01</span>
+                    <h3>Prepare Your Details</h3>
+                    <p>
+                        Gather your child's information and
+                        parent or guardian contact details.
+                    </p>
+                </div>
+
+                <div class="admission-step">
+                    <span>02</span>
+                    <h3>Contact the School</h3>
+                    <p>
+                        Send an inquiry and confirm availability,
+                        requirements and the official paper form.
+                    </p>
+                </div>
+
+                <div class="admission-step">
+                    <span>03</span>
+                    <h3>Complete Registration</h3>
+                    <p>
+                        Obtain and complete the official joining form
+                        and follow the school's payment instructions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container text-center py-4">
+        <p class="fw-bold mb-1">Matendo Day Care Centre</p>
+        <p class="mb-2">Education Is an Investment</p>
+        <p class="mb-0">
+            &copy; <span id="currentYear"></span>
+            Matendo Day Care Centre. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
