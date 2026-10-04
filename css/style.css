@@ -245,98 +245,305 @@ body {
     }
 }
 
-/* =================================
-   PROGRAMS SECTION
-================================= */
 
-.programs-section {
-    background-color: #f8f9fa;
+/* =========================
+   PROGRAMS PAGE
+========================= */
+
+.school-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
-.section-heading h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222;
+/* HERO */
+
+.programs-hero {
+    padding: 55px 0;
+    background: #fff8ef;
+}
+
+.programs-hero-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.programs-hero-text {
+    text-align: center;
+}
+
+.programs-eyebrow {
+    display: inline-block;
+    color: #e87516;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     margin-bottom: 12px;
 }
 
-.section-heading p {
-    color: #666;
-    font-size: 15px;
+.programs-hero-text h1 {
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 18px;
 }
 
-.program-card {
-    height: 100%;
-    padding: 28px 22px;
-    background-color: #fff;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+.programs-hero-text p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
-.program-card:hover {
-    transform: translateY(-6px);
+.programs-hero-image {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.programs-hero-image img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-.program-icon {
-    width: 65px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    background-color: #fff0df;
-    color: #e67e22;
-    font-size: 28px;
+/* PROGRAM CARDS */
+
+.programs-section {
+    padding: 65px 15px;
+    background: #fff;
 }
 
-.program-card h3 {
-    font-size: 21px;
-    font-weight: bold;
+.programs-section-heading {
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.programs-section-heading h2 {
     color: #222;
-    margin-bottom: 8px;
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
-.program-age {
-    display: inline-block;
-    color: #e67e22;
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-.program-card p {
-    font-size: 14px;
+.programs-section-heading p {
     color: #666;
     line-height: 1.7;
 }
 
-.program-card a {
+.programs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.program-card {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.13);
+}
+
+.program-image {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.program-card-body {
+    padding: 22px;
+}
+
+.program-age {
     display: inline-block;
-    margin-top: 10px;
-    color: #d96b13;
-    font-weight: bold;
-    text-decoration: none;
+    background: #fff0dc;
+    color: #d86b12;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-.program-card a:hover {
-    color: #a94c08;
+.program-card-body h3 {
+    color: #222;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
-/* Larger screens */
+.program-card-body p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* LEARNING APPROACH */
+
+.programs-approach {
+    padding: 55px 15px;
+    background: #fff8ef;
+}
+
+.programs-approach-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.programs-approach-content h2 {
+    color: #222;
+    font-weight: 700;
+    font-size: clamp(25px, 4vw, 34px);
+    margin-bottom: 15px;
+}
+
+.programs-approach-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.programs-approach-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 170px;
+    color: #e87516;
+    font-size: 100px;
+}
+
+/* CALL TO ACTION */
+
+.programs-cta {
+    padding: 55px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.programs-cta h2 {
+    color: #222;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.programs-cta p {
+    max-width: 600px;
+    margin: 0 auto 22px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* TABLET */
+
 @media (min-width: 768px) {
-    .section-heading h2 {
-        font-size: 35px;
+    .programs-hero {
+        padding: 65px 0;
     }
 
-    .program-card {
-        padding: 35px 25px;
+    .programs-hero-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .programs-hero-text {
+        text-align: left;
+    }
+
+    .programs-hero-image {
+        max-width: none;
+    }
+
+    .programs-hero-image img {
+        height: 300px;
+    }
+
+    .programs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .program-image {
+        height: 210px;
+    }
+
+    .programs-approach-content {
+        grid-template-columns: 2fr 1fr;
     }
 }
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    .programs-hero-image img {
+        height: 340px;
+    }
+
+    .programs-section {
+        padding: 75px 20px;
+    }
+
+    .programs-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px;
+    }
+
+    .program-image {
+        height: 220px;
+    }
+
+    .programs-approach,
+    .programs-cta {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+    .programs-hero {
+        padding: 40px 0;
+    }
+
+    .programs-hero-image img {
+        height: 210px;
+    }
+
+    .program-image {
+        height: 165px;
+    }
+
+    .program-card-body {
+        padding: 18px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .program-card {
+        transition: none;
+    }
+}
+
 /* =================================
    WHY CHOOSE US
 ================================= */
@@ -912,137 +1119,244 @@ body {
 }
 
 
-/* ==============================
-   TEACHERS PAGE
-================================ */
 
-/* Teachers Hero */
-.teachers-hero {
-    background: #fff8f1;
-    padding: 50px 15px;
+/* =========================
+   SCHOOL TEAM PAGE
+========================= */
+
+.team-hero {
+    padding: 75px 20px;
     text-align: center;
+    background: linear-gradient(135deg, #fff8ef, #ffead5);
 }
 
-.teachers-hero .section-subtitle {
-    color: #d96b13;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-
-.teachers-hero h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #252525;
-    margin-bottom: 15px;
-}
-
-.teachers-hero p:not(.section-subtitle) {
-    color: #666;
-    line-height: 1.7;
-    max-width: 650px;
+.team-hero-content {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Teachers Section */
-.teachers-section {
-    background: #fff;
-}
-
-.teacher-card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
-}
-
-.teacher-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-/* Teacher Images */
-.teacher-image {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    display: block;
-}
-
-/* Teacher Information */
-.teacher-card-body {
-    padding: 22px 18px;
-}
-
-.teacher-card h3 {
-    font-size: 1.3rem;
+.team-eyebrow {
+    display: inline-block;
+    color: #e87516;
+    font-size: 13px;
     font-weight: 700;
-    color: #252525;
-    margin-bottom: 8px;
-}
-
-.teacher-role {
-    color: #d96b13;
-    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
     margin-bottom: 12px;
 }
 
-.teacher-card-body p:last-child {
+.team-hero h1 {
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.team-hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #555;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* TEAM PHOTO */
+
+.school-team-section {
+    padding: 65px 15px;
+    background: #fff;
+}
+
+.team-section-heading {
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.team-section-heading h2 {
+    color: #222;
+    font-size: clamp(27px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.team-section-heading p {
+    color: #666;
+    line-height: 1.8;
+}
+
+.team-photo-wrapper {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff8ef;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+}
+
+.school-team-photo {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.team-caption {
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.team-caption h3 {
+    color: #222;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.team-caption p {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* TEAM VALUES */
+
+.team-values-section {
+    padding: 65px 15px;
+    background: #fff8ef;
+}
+
+.team-values-section h2 {
+    color: #222;
+    font-size: clamp(26px, 4vw, 35px);
+    font-weight: 700;
+}
+
+.team-values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.team-value-card {
+    padding: 30px 22px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.team-value-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-value-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #fff0dc;
+    color: #e87516;
+    font-size: 25px;
+}
+
+.team-value-card h3 {
+    font-size: 20px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.team-value-card p {
     color: #666;
     line-height: 1.7;
     margin-bottom: 0;
 }
 
-/* Teachers Call to Action */
-.teachers-cta {
-    background: #fff8f1;
+/* CALL TO ACTION */
+
+.team-cta {
+    padding: 65px 20px;
     text-align: center;
+    background: #fff;
 }
 
-.teachers-cta h2 {
-    font-size: 1.7rem;
+.team-cta h2 {
+    color: #222;
+    font-size: clamp(25px, 4vw, 35px);
     font-weight: 700;
-    color: #252525;
     margin-bottom: 15px;
 }
 
-.teachers-cta p {
+.team-cta p {
+    max-width: 600px;
+    margin: 0 auto 22px;
     color: #666;
     line-height: 1.7;
-    margin-bottom: 22px;
 }
 
-/* Tablet */
+/* TABLET */
+
 @media (min-width: 768px) {
-    .teachers-hero {
-        padding: 75px 20px;
+    .school-team-photo {
+        height: 380px;
     }
 
-    .teachers-hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .teacher-image {
-        height: 260px;
-    }
-
-    .teachers-cta h2 {
-        font-size: 2rem;
+    .team-values-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-/* Desktop */
+/* DESKTOP */
+
 @media (min-width: 992px) {
-    .teachers-hero h1 {
-        font-size: 2.8rem;
+    .team-hero {
+        padding: 90px 20px;
     }
 
-    .teacher-image {
-        height: 280px;
+    .school-team-section,
+    .team-values-section,
+    .team-cta {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .school-team-photo {
+        height: 500px;
+    }
+
+    .team-values-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 28px;
+    }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+    .team-hero {
+        padding: 50px 15px;
+    }
+
+    .school-team-photo {
+        height: 210px;
+    }
+
+    .team-value-card {
+        padding: 25px 18px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .team-value-card {
+        transition: none;
     }
 }
 
