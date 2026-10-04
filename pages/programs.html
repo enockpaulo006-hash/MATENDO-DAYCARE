@@ -1,150 +1,230 @@
-<!-- Programs Hero -->
-<section class="programs-hero">
-    <div class="container text-center">
-        <p class="section-subtitle">Our Learning Programs</p>
-        <h1>Learning and Growing Together</h1>
-        <p>
-            Discover our early learning programs designed
-            to support every stage of childhood.
-        </p>
-    </div>
-</section>
 
-<!-- Programs List -->
-<section class="programs-list py-5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the learning programs offered at Matendo Day Care Centre.">
+    <title>Our Programs | Matendo Day Care Centre</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Main CSS: correct relative path -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../assets/images/matendo-logo.png"
+                 alt="Matendo Day Care Centre logo"
+                 class="school-logo">
+            <span class="ms-2 fw-bold">Matendo Day Care Centre</span>
+        </a>
 
-        <div class="row g-4">
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Baby Class -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="program-card h-100">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="programs.html">Programs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ourteam.html">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="announcements.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
 
-                    <img
-                        src="../assets/images/children-1.jpg"
-                        alt="Children learning in a classroom"
-                        class="program-image"
-                    >
-
-                    <div class="program-card-body">
-                        <span class="age-badge">Ages 1–3</span>
-
-                        <h3>Baby Class</h3>
-
-                        <p>
-                            A caring and playful environment
-                            that supports early development,
-                            discovery and social interaction.
-                        </p>
-
-                        <ul>
-                            <li>Early communication skills</li>
-                            <li>Play-based learning</li>
-                            <li>Social interaction</li>
-                            <li>Creative activities</li>
-                        </ul>
-
-                        <a href="admission.html"
-                           class="program-link">
-                            Admission Information
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Middle Class 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="program-card h-100">
-
-                    <img
-                        src="../assets/images/children-2.jpg"
-                        alt="Children participating in learning activities"
-                        class="program-image"
-                    >
-
-                    <div class="program-card-body">
-                        <span class="age-badge">Ages 3–5</span>
-
-                        <h3>Middle Class 1</h3>
-
-                        <p>
-                            Encouraging creativity,
-                            communication, early learning
-                            and confidence through engaging
-                            classroom activities.
-                        </p>
-
-                        <ul>
-                            <li>Language development</li>
-                            <li>Number recognition</li>
-                            <li>Drawing and creativity</li>
-                            <li>Group activities</li>
-                        </ul>
-
-                        <a href="admission.html"
-                           class="program-link">
-                            Admission Information
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Middle Class 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="program-card h-100">
-
-                    <img
-                        src="../assets/images/children-3.jpg"
-                        alt="Children learning together"
-                        class="program-image"
-                    >
-
-                    <div class="program-card-body">
-                        <span class="age-badge">Ages 5–7</span>
-
-                        <h3>Middle Class 2</h3>
-
-                        <p>
-                            Preparing children for their next
-                            educational stage through
-                            foundational skills, exploration
-                            and learning.
-                        </p>
-
-                        <ul>
-                            <li>Early reading and writing</li>
-                            <li>Basic mathematics</li>
-                            <li>Problem-solving activities</li>
-                            <li>Learning independence</li>
-                        </ul>
-
-                        <a href="admission.html"
-                           class="program-link">
-                            Admission Information
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
+            <a href="admission.html"
+               class="btn btn-warning ms-lg-3 mt-3 mt-lg-0">
+                Admission
+            </a>
         </div>
     </div>
-</section>
+</nav>
 
-<!-- Admission Call to Action -->
-<section class="programs-cta py-5">
-    <div class="container text-center">
-        <h2>Give Your Child a Bright Start</h2>
+<!-- HERO -->
+<header class="programs-hero">
+    <div class="container">
+        <div class="programs-hero-content">
+            <div class="programs-hero-text">
+                <span class="programs-eyebrow">Our Learning Programs</span>
 
-        <p>
-            Join Matendo Day Care Centre and let your
-            child learn, grow and discover new possibilities.
-        </p>
+                <h1>Learning and Growing Together</h1>
 
-        <a href="admission.html" class="btn btn-apply">
-            Apply Now
-        </a>
+                <p>
+                    Discover our early learning programs designed to
+                    support children's growth, creativity and development
+                    in a caring environment.
+                </p>
+
+                <a href="admission.html" class="btn btn-warning">
+                    Explore Admission
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+            <div class="programs-hero-image">
+                <img src="../assets/images/programs-hero.jpg"
+                     alt="Children learning together in a classroom">
+            </div>
+        </div>
     </div>
-</section>
+</header>
+
+<main>
+
+    <!-- PROGRAMS -->
+    <section class="programs-section">
+        <div class="container">
+
+            <div class="programs-section-heading text-center">
+                <span class="programs-eyebrow">What We Offer</span>
+                <h2>Our Learning Classes</h2>
+                <p>
+                    Every stage offers opportunities for children
+                    to learn, play and build confidence.
+                </p>
+            </div>
+
+            <div class="programs-grid">
+
+                <!-- BABY CLASS -->
+                <article class="program-card">
+                    <img src="../assets/images/baby-class.jpg"
+                         alt="Children in Baby Class"
+                         class="program-image">
+
+                    <div class="program-card-body">
+                        <span class="program-age">Ages 1–3</span>
+                        <h3>Baby Class</h3>
+                        <p>
+                            A welcoming introduction to learning through
+                            play, songs, creative activities and
+                            early social interaction.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- MIDDLE CLASS 1 -->
+                <article class="program-card">
+                    <img src="../assets/images/middle-class-1.jpg"
+                         alt="Children participating in Middle Class 1"
+                         class="program-image">
+
+                    <div class="program-card-body">
+                        <span class="program-age">Ages 3–5</span>
+                        <h3>Middle Class 1</h3>
+                        <p>
+                            Children develop early literacy, numeracy,
+                            communication and problem-solving skills
+                            through guided learning and play.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- MIDDLE CLASS 2 -->
+                <article class="program-card">
+                    <img src="../assets/images/middle-class-2.jpg"
+                         alt="Children learning in Middle Class 2"
+                         class="program-image">
+
+                    <div class="program-card-body">
+                        <span class="program-age">Ages 5–7</span>
+                        <h3>Middle Class 2</h3>
+                        <p>
+                            Activities help children strengthen their
+                            knowledge, independence and readiness
+                            for the next stage of education.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING APPROACH -->
+    <section class="programs-approach">
+        <div class="container">
+            <div class="programs-approach-content">
+                <div>
+                    <span class="programs-eyebrow">Our Approach</span>
+                    <h2>Learning Beyond the Classroom</h2>
+                    <p>
+                        We encourage children to explore their
+                        environment, express their creativity,
+                        develop friendships and build confidence.
+                    </p>
+                    <a href="about.html" class="btn btn-outline-warning">
+                        Learn More About Us
+                    </a>
+                </div>
+
+                <div class="programs-approach-icon">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="programs-cta">
+        <div class="container text-center">
+            <h2>Give Your Child a Bright Start</h2>
+            <p>
+                Contact us to learn more about our programs
+                and admission process.
+            </p>
+            <a href="admission.html" class="btn btn-warning">
+                Admission Information
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container text-center py-4">
+        <p class="fw-bold mb-1">Matendo Day Care Centre</p>
+        <p class="mb-2">Education Is an Investment</p>
+        <p class="mb-0">
+            &copy; <span id="currentYear"></span>
+            Matendo Day Care Centre. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
