@@ -1045,3 +1045,861 @@ body {
         height: 280px;
     }
 }
+
+
+/* =========================
+   GALLERY PAGE
+========================= */
+
+.gallery-hero {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.gallery-hero span {
+    color: #e87516;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.gallery-hero h1 {
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.gallery-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+.gallery-section {
+    padding: 55px 15px;
+    background: #fff;
+}
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.gallery-filter {
+    border: 1px solid #e87516;
+    background: #fff;
+    color: #e87516;
+    padding: 9px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gallery-filter:hover,
+.gallery-filter.active {
+    background: #e87516;
+    color: #fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.gallery-item {
+    min-width: 0;
+    animation: galleryFadeIn 0.4s ease;
+}
+
+.gallery-card {
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 24px rgba(0, 0, 0, 0.13);
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.04);
+}
+
+.gallery-card h3 {
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 16px;
+    margin: 0;
+}
+
+.gallery-cta {
+    padding: 55px 20px;
+    text-align: center;
+    background: #fff8ef;
+}
+
+.gallery-cta h2 {
+    color: #e87516;
+    font-size: clamp(23px, 4vw, 32px);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.gallery-cta p {
+    max-width: 600px;
+    margin: 0 auto 22px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.gallery-cta .btn {
+    padding: 11px 24px;
+    font-weight: 600;
+}
+
+/* Gallery animation */
+@keyframes galleryFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+@media (min-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .gallery-image {
+        height: 210px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .gallery-section {
+        padding: 70px 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 26px;
+    }
+
+    .gallery-image {
+        height: 230px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .gallery-item,
+    .gallery-card,
+    .gallery-image,
+    .gallery-filter {
+        animation: none;
+        transition: none;
+    }
+}
+
+
+/* =========================
+   NEWS & ANNOUNCEMENTS
+========================= */
+
+.news-hero {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.news-subtitle {
+    color: #e87516;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.news-hero h1 {
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.news-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+.news-section {
+    padding: 60px 15px;
+    background: #fff;
+}
+
+.news-section h2 {
+    font-weight: 700;
+    color: #222;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.13);
+}
+
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.news-content {
+    padding: 22px;
+}
+
+.news-date {
+    color: #e87516;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.news-date i {
+    margin-right: 5px;
+}
+
+.news-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+    color: #222;
+}
+
+.news-content p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.news-info {
+    background: #fff8ef;
+    padding: 55px 20px;
+}
+
+.news-info-icon {
+    font-size: 40px;
+    color: #e87516;
+    margin-bottom: 15px;
+}
+
+.news-info h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.news-info p {
+    max-width: 600px;
+    margin: 0 auto 22px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* TABLET */
+@media (min-width: 576px) {
+    .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .news-section {
+        padding: 75px 20px;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .news-image {
+        height: 220px;
+    }
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .news-card {
+        transition: none;
+    }
+}
+
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-hero {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.contact-hero span {
+    color: #e87516;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.contact-hero h1 {
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.contact-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+.contact-section {
+    padding: 65px 15px;
+    background: #fff;
+}
+
+.contact-section h2,
+.contact-map-section h2 {
+    color: #222;
+    font-weight: 700;
+}
+
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.contact-info-card {
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #fff0dc;
+    color: #e87516;
+    font-size: 26px;
+}
+
+.contact-info-card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.contact-info-card p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.contact-info-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #d86b12;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info-card a:hover {
+    text-decoration: underline;
+}
+
+/* CONTACT FORM */
+
+.contact-form-section {
+    padding: 65px 15px;
+    background: #fff8ef;
+}
+
+.contact-form-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.contact-form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form-heading span {
+    color: #e87516;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-form-heading h2 {
+    font-weight: 700;
+    margin: 10px 0;
+    color: #222;
+}
+
+.contact-form-heading p {
+    color: #666;
+}
+
+.contact-form-wrapper .form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+.contact-form-wrapper .form-control,
+.contact-form-wrapper .form-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form-wrapper .form-control:focus,
+.contact-form-wrapper .form-select:focus {
+    border-color: #e87516;
+    box-shadow: 0 0 0 0.2rem rgba(232, 117, 22, 0.15);
+}
+
+.contact-submit-btn {
+    padding: 12px 25px;
+    font-weight: 600;
+}
+
+.contact-feedback {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* MAP */
+
+.contact-map-section {
+    padding: 65px 15px;
+    background: #fff;
+}
+
+.contact-map {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* TABLET */
+
+@media (min-width: 576px) {
+    .contact-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-form-wrapper {
+        padding: 40px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    .contact-info-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+    }
+
+    .contact-section,
+    .contact-form-section,
+    .contact-map-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .contact-map {
+        height: 450px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-info-card {
+        transition: none;
+    }
+}
+
+
+/* =========================
+   ADMISSION PAGE
+========================= */
+
+.admission-hero {
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+}
+
+.admission-eyebrow {
+    color: #e87516;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.admission-hero h1 {
+    max-width: 800px;
+    margin: 14px auto;
+    color: #222;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+}
+
+.admission-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+.admission-overview {
+    padding: 65px 15px;
+    background: #fff;
+}
+
+.admission-overview h2,
+.admission-fees h2,
+.admission-steps-section h2 {
+    font-weight: 700;
+    color: #222;
+}
+
+.admission-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.admission-info-card {
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.admission-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #fff0dc;
+    color: #e87516;
+    font-size: 26px;
+}
+
+.admission-info-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.admission-info-card p {
+    color: #d86b12;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+/* FEES */
+
+.admission-fees {
+    padding: 65px 15px;
+    background: #fff8ef;
+}
+
+.admission-fees-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.admission-fees-table th {
+    background: #fff0dc;
+    color: #333;
+}
+
+.admission-fees-table td,
+.admission-fees-table th {
+    padding: 14px;
+    vertical-align: middle;
+}
+
+.admission-note {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 15px 0 0;
+}
+
+/* APPLICATION FORM */
+
+.admission-form-section {
+    padding: 65px 15px;
+    background: #fff;
+}
+
+.admission-form-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.admission-form-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.admission-form-heading span {
+    color: #e87516;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admission-form-heading h2 {
+    margin: 10px 0;
+    color: #222;
+    font-weight: 700;
+}
+
+.admission-form-heading p {
+    color: #666;
+}
+
+.admission-form-subtitle {
+    margin: 15px 0 22px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.admission-form-subtitle i {
+    color: #e87516;
+    margin-right: 8px;
+}
+
+.admission-form-wrapper .form-label {
+    color: #333;
+    font-weight: 600;
+}
+
+.admission-form-wrapper .form-control,
+.admission-form-wrapper .form-select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.admission-form-wrapper .form-control:focus,
+.admission-form-wrapper .form-select:focus {
+    border-color: #e87516;
+    box-shadow: 0 0 0 0.2rem rgba(232, 117, 22, 0.15);
+}
+
+.admission-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.admission-consent input {
+    margin-top: 5px;
+    accent-color: #e87516;
+}
+
+.admission-submit-btn {
+    padding: 12px 22px;
+    font-weight: 600;
+}
+
+.admission-feedback {
+    color: #555;
+    font-size: 14px;
+}
+
+/* STEPS */
+
+.admission-steps-section {
+    padding: 65px 15px;
+    background: #fff8ef;
+}
+
+.admission-steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 22px;
+}
+
+.admission-step {
+    padding: 28px 22px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.admission-step > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #fff0dc;
+    color: #d86b12;
+    font-weight: 700;
+}
+
+.admission-step h3 {
+    color: #222;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.admission-step p {
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* TABLET */
+
+@media (min-width: 576px) {
+    .admission-info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .admission-steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .admission-form-wrapper {
+        padding: 40px;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 992px) {
+    .admission-info-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .admission-steps-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .admission-overview,
+    .admission-fees,
+    .admission-form-section,
+    .admission-steps-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+    .admission-info-card {
+        transition: none;
+    }
+}
