@@ -2,52 +2,71 @@
 // FIRESTORE ANNOUNCEMENTS
 // =========================
 
-import { collection, getDocs }
-    from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+import {
+    collection,
+    getDocs,
+    query,
+    where
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
 import { db } from "./firebase.js";
+
 
 const announcementsContainer =
     document.getElementById("announcementsContainer");
 
+
 async function loadAnnouncements() {
+
     if (!announcementsContainer) return;
 
     try {
-        const snapshot = await getDocs(
-            collection(db, "announcements")
+
+        // Get only published announcements
+        const announcementsQuery = query(
+            collection(db, "announcements"),
+            where("isPublished", "==", true)
         );
+
+        const snapshot = await getDocs(announcementsQuery);
 
         announcementsContainer.innerHTML = "";
 
         const announcements = [];
 
+
         snapshot.forEach((doc) => {
+
             const data = doc.data();
 
-            // Only display published announcements
-            if (data.isPublished === true) {
-                announcements.push({
-                    id: doc.id,
-                    ...data
-                });
-            }
+            announcements.push({
+                id: doc.id,
+                ...data
+            });
+
         });
+
 
         // Newest announcements first
         announcements.sort((a, b) => {
             return new Date(b.date) - new Date(a.date);
         });
 
+
+        // No announcements
         if (announcements.length === 0) {
+
             announcementsContainer.innerHTML = `
                 <div class="alert alert-info">
                     No announcements available at the moment.
                 </div>
             `;
+
             return;
         }
 
+
+        // Display announcements
         announcements.forEach((announcement) => {
 
             const card = document.createElement("article");
@@ -73,7 +92,9 @@ async function loadAnnouncements() {
             `;
 
             announcementsContainer.appendChild(card);
+
         });
+
 
     } catch (error) {
 
@@ -87,7 +108,10 @@ async function loadAnnouncements() {
                 Unable to load announcements right now.
             </div>
         `;
+
     }
 }
 
+
+// Load announcements
 loadAnnouncements();
