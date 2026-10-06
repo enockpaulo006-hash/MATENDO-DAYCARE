@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
 <!-- NAVIGATION -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
+
         <a class="navbar-brand d-flex align-items-center" href="../index.html">
             <img src="../assets/images/matendo-logo.png"
                  alt="Matendo Day Care Centre Logo"
@@ -23,132 +24,121 @@
             <span class="ms-2 fw-bold">Matendo Day Care Centre</span>
         </a>
 
-        <button class="navbar-toggler" type="button"
+        <button class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#mainNavbar"
                 aria-controls="mainNavbar"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
+
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNavbar">
+
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
-                <li class="nav-item"><a class="nav-link" href="ourteam.html">Our Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="announcements.html">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="programs.html">Programs</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="ourteam.html">Our Team</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       aria-current="page"
+                       href="announcements.html">
+                        News
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
             </ul>
-            <a href="admission.html" class="btn btn-warning ms-lg-3 mt-3 mt-lg-0">Admission</a>
+
+            <a href="admission.html"
+               class="btn btn-warning ms-lg-3 mt-3 mt-lg-0">
+                Admission
+            </a>
+
         </div>
     </div>
 </nav>
 
+
 <!-- HERO -->
 <header class="news-hero">
+
     <div class="container">
-        <span class="news-subtitle">Stay Connected</span>
+
+        <span class="news-subtitle">
+            Stay Connected
+        </span>
+
         <h1>News & Announcements</h1>
+
         <p>
             Stay informed about school activities, important announcements
             and special events at Matendo Day Care Centre.
         </p>
+
     </div>
+
 </header>
+
 
 <!-- NEWS SECTION -->
 <main>
+
     <section class="news-section">
+
         <div class="container">
 
             <div class="text-center mb-5">
+
                 <h2>Latest Updates</h2>
+
                 <p class="text-muted">
                     Important information and activities from our school.
                 </p>
-            </div>
-
-            <div class="news-grid">
-
-                <!-- NEWS 1 -->
-                <article class="news-card">
-                    <img src="../assets/images/news-1.jpg"
-                         alt="Children learning at school"
-                         class="news-image">
-
-                    <div class="news-content">
-                        <span class="news-date">
-                            <i class="bi bi-calendar3"></i>
-                            School Update
-                        </span>
-
-                        <h3>Welcome to Matendo Day Care Centre</h3>
-
-                        <p>
-                            We are happy to welcome children and parents
-                            to our learning community. Our goal is to
-                            provide a caring environment where children
-                            can learn, explore and grow.
-                        </p>
-                    </div>
-                </article>
-
-                <!-- NEWS 2 -->
-                <article class="news-card">
-                    <img src="../assets/images/news-2.jpg"
-                         alt="Children taking part in learning activities"
-                         class="news-image">
-
-                    <div class="news-content">
-                        <span class="news-date">
-                            <i class="bi bi-calendar3"></i>
-                            Learning
-                        </span>
-
-                        <h3>Learning Through Play</h3>
-
-                        <p>
-                            Play helps children develop creativity,
-                            communication and problem-solving skills.
-                            Our learning activities encourage children
-                            to discover the world around them.
-                        </p>
-                    </div>
-                </article>
-
-                <!-- NEWS 3 -->
-                <article class="news-card">
-                    <img src="../assets/images/news-3.jpg"
-                         alt="School environment"
-                         class="news-image">
-
-                    <div class="news-content">
-                        <span class="news-date">
-                            <i class="bi bi-calendar3"></i>
-                            School Community
-                        </span>
-
-                        <h3>Growing Together</h3>
-
-                        <p>
-                            We believe that children, parents and teachers
-                            work best together. Our school is committed
-                            to creating a positive and supportive
-                            learning environment.
-                        </p>
-                    </div>
-                </article>
 
             </div>
+
+
+            <!-- FIREBASE ANNOUNCEMENTS -->
+            <div class="news-grid" id="announcementsContainer">
+
+                <!-- Announcements from Firebase will appear here -->
+
+            </div>
+
         </div>
+
     </section>
+
 
     <!-- INFORMATION SECTION -->
     <section class="news-info">
+
         <div class="container text-center">
+
             <div class="news-info-icon">
                 <i class="bi bi-megaphone"></i>
             </div>
@@ -163,23 +153,48 @@
             <a href="contact.html" class="btn btn-warning">
                 Contact Our School
             </a>
+
         </div>
+
     </section>
+
 </main>
+
 
 <!-- FOOTER -->
 <footer class="site-footer">
+
     <div class="container text-center py-4">
-        <p class="fw-bold mb-1">Matendo Day Care Centre</p>
-        <p class="mb-2">Education Is an Investment</p>
-        <p class="mb-0">
-            &copy; <span id="currentYear"></span>
-            Matendo Day Care Centre. All rights reserved.
+
+        <p class="fw-bold mb-1">
+            Matendo Day Care Centre
         </p>
+
+        <p class="mb-2">
+            Education Is an Investment
+        </p>
+
+        <p class="mb-0">
+
+            &copy;
+            <span id="currentYear"></span>
+            Matendo Day Care Centre.
+            All rights reserved.
+
+        </p>
+
     </div>
+
 </footer>
 
+
+<!-- JAVASCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="../js/main.js"></script>
+
+<script type="module" src="../js/announcements.js"></script>
+
+
 </body>
 </html>
