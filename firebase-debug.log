@@ -1,0 +1,60 @@
+[debug] [2026-10-06T16:58:50.381Z] ----------------------------------------------------------------------
+[debug] [2026-10-06T16:58:50.389Z] Command:       C:\Users\Edv\AppData\Local\node-v24.15.0-win-x64\node.exe C:\Users\Edv\AppData\Local\node-v24.15.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2026-10-06T16:58:50.390Z] CLI Version:   15.32.1
+[debug] [2026-10-06T16:58:50.390Z] Platform:      win32
+[debug] [2026-10-06T16:58:50.391Z] Node Version:  v24.15.0
+[debug] [2026-10-06T16:58:50.391Z] Detected Agent: unknown
+[debug] [2026-10-06T16:58:50.391Z] Time:          Tue Oct 06 2026 19:58:50 GMT+0300 (East Africa Time)
+[debug] [2026-10-06T16:58:50.391Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-06T16:58:56.558Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-06T16:58:56.559Z] > authorizing via signed-in user (enockpaulo006@gmail.com)
+[debug] [2026-10-06T16:58:56.559Z] [iam] checking project matendo-daycare for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-10-06T16:58:56.604Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:58:56.605Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:58:56.607Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/matendo-daycare:testIamPermissions [none]
+[debug] [2026-10-06T16:58:56.608Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/matendo-daycare:testIamPermissions  x-goog-user-project=matendo-daycare
+[debug] [2026-10-06T16:58:56.608Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matendo-daycare:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-06T16:58:58.244Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/matendo-daycare:testIamPermissions 200
+[debug] [2026-10-06T16:58:58.245Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/matendo-daycare:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-10-06T16:58:58.270Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:58:58.270Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:58:58.271Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/matendo-daycare [none]
+[debug] [2026-10-06T16:59:00.036Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/matendo-daycare 200
+[debug] [2026-10-06T16:59:00.037Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/matendo-daycare {"projectId":"matendo-daycare","projectNumber":"90675878872","displayName":"matendo-daycare","name":"projects/matendo-daycare","resources":{"hostingSite":"matendo-daycare"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_1a4b6638-b60e-4e47-b183-d12b5989fe75"}
+[info] 
+[info] === Deploying to 'matendo-daycare'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-10-06T16:59:00.056Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:00.056Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:00.056Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/matendo-daycare/sites/matendo-daycare [none]
+[debug] [2026-10-06T16:59:02.315Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/matendo-daycare/sites/matendo-daycare 200
+[debug] [2026-10-06T16:59:02.315Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/matendo-daycare/sites/matendo-daycare {"name":"projects/matendo-daycare/sites/matendo-daycare","defaultUrl":"https://matendo-daycare.web.app","appId":"1:90675878872:web:c97daa59a21eb3f8ec30ad","type":"DEFAULT_SITE"}
+[debug] [2026-10-06T16:59:02.317Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:02.317Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:02.317Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matendo-daycare/versions [none]
+[debug] [2026-10-06T16:59:02.317Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matendo-daycare/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-10-06T16:59:04.186Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matendo-daycare/versions 200
+[debug] [2026-10-06T16:59:04.187Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/matendo-daycare/versions {"name":"projects/90675878872/sites/matendo-daycare/versions/aec20f914c89a4b3","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[matendo-daycare]: beginning deploy... 
+[info] i  hosting[matendo-daycare]: found 17 files in public 
+[debug] [2026-10-06T16:59:04.284Z] [hosting] uploading with 200 concurrency
+[debug] [2026-10-06T16:59:04.431Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:04.431Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:04.433Z] [hosting] hash cache [cHVibGlj] stored for 17 files
+[debug] [2026-10-06T16:59:04.438Z] [hosting][hash queue][FINAL] {"max":117,"min":2,"avg":22.294117647058822,"active":0,"complete":17,"success":17,"errored":0,"retried":0,"total":17,"elapsed":133}
+[debug] [2026-10-06T16:59:04.439Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/90675878872/sites/matendo-daycare/versions/aec20f914c89a4b3:populateFiles [none]
+[debug] [2026-10-06T16:59:04.440Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/90675878872/sites/matendo-daycare/versions/aec20f914c89a4b3:populateFiles {"files":{"/404.html":"762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890","/pages/programs.html":"26c49470dd4d883ee8e470a83c6bb91eeeb5faee6bb6cf117e9abb3e968d5bb2","/pages/ourteam.html":"61e55af0e4c5e093e65989c97f438cea7b0830415c6f16bc415fb223355ff693","/pages/gallery.html":"b6fd39541002ebeab54cd4b4498d7b8a40872e6a6fc22bbd09af96215251df9a","/pages/announcements.html":"75ee05d9736763e5c593d4aab61cf1687cfd562c68b46d1ec3ea816b8335d500","/pages/admission.html":"3c0d1d2747e68871588dacf5c76f8d4c8b88d0635f3c4ce3b13963a7838f3740","/pages/about.html":"7290b6c71d32beb0805ad852e4fb7a2b5331751705f5ef7202af6716efd15a03","/js/main.js":"e34fcc71c3b4904eb15b959bea91d2d2ee519f7ebcc3d93d9b4725c4aaf6fc54","/js/firebase.js":"f96a2719395c66b058bf2ccd84ff3820447f7c4c11a650e6b6cbb640a93efc9b","/js/announcements.js":"15ed4e03e5ec6e538ecc259f0b7189b199fe35341f178c1226b9ce3c3a459502","/css/style.css":"7773c154eceff224ae3b17256835f3e07bcac3e8b3f291d3b1ac8dc4270b8593","/assets/images/matendo-logo.png":"66f1a28b96230d25f0a2571333137aa0a31b301e992b706f6734fac68ff9828a","/assets/images/children-3.jpg":"ae8c7ce6bff4efd310743b7d2ab9526f6195ca237c6518b247405e49c4e40d8b","/assets/images/children-2.jpg":"0ed6de2689ca39e63f9c64932ed3342aef15b370786928813782a811e6719ad1","/assets/images/children-1.jpg":"179da9c3c232ba26ac0ad40a984661d5b1f24c3d2afee5dc0b1fc03912c1f4ac","/index.html":"2f18c2661bd5c2916cbf336df8a3f01d348731001f34eb3ac0db843d9f73d116","/pages/contact.html":"06b4ee0f8edd318053572fe170e591ef06cb45269712e1a00c1e338ce3cf431d"}}
+[debug] [2026-10-06T16:59:05.551Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/90675878872/sites/matendo-daycare/versions/aec20f914c89a4b3:populateFiles 200
+[debug] [2026-10-06T16:59:05.551Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/90675878872/sites/matendo-daycare/versions/aec20f914c89a4b3:populateFiles {"uploadRequiredHashes":["2f18c2661bd5c2916cbf336df8a3f01d348731001f34eb3ac0db843d9f73d116","06b4ee0f8edd318053572fe170e591ef06cb45269712e1a00c1e338ce3cf431d"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/matendo-daycare/versions/aec20f914c89a4b3/files"}
+[debug] [2026-10-06T16:59:05.552Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:05.553Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:05.553Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:05.554Z] Checked if tokens are valid: true, expires at: 1791307260136
+[debug] [2026-10-06T16:59:05.554Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/matendo-daycare/versions/aec20f914c89a4b3/files/2f18c2661bd5c2916cbf336df8a3f01d348731001f34eb3ac0db843d9f73d116 [none]
+[debug] [2026-10-06T16:59:05.554Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matendo-daycare/versions/aec20f914c89a4b3/files/2f18c2661bd5c2916cbf336df8a3f01d348731001f34eb3ac0db843d9f73d116 [stream]
+[debug] [2026-10-06T16:59:05.556Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/matendo-daycare/versions/aec20f914c89a4b3/files/06b4ee0f8edd318053572fe170e591ef06cb45269712e1a00c1e338ce3cf431d [none]
+[debug] [2026-10-06T16:59:05.556Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/matendo-daycare/versions/aec20f914c89a4b3/files/06b4ee0f8edd318053572fe170e591ef06cb45269712e1a00c1e338ce3cf431d [stream]
+[debug] [2026-10-06T16:59:05.564Z] [hosting][populate queue][FINAL] {"max":1123,"min":1123,"avg":1123,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1133}
+[debug] [2026-10-06T16:59:05.564Z] [hosting] uploads queued: 2
