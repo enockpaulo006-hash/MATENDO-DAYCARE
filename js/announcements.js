@@ -113,5 +113,5 @@ async function loadAnnouncements() {
 }
 
 
-// Load announcements
+// Load announcements.
 loadAnnouncements();
