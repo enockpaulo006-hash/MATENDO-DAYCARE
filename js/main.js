@@ -139,7 +139,6 @@ Please guide me on the official admission process and form requirements.`;
 
 // =========================
 // AUTOMATIC FOOTER YEAR
-// =========================
 
 const currentYear = document.getElementById("currentYear");
 
