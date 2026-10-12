@@ -1,7 +1,6 @@
 
 // =========================
 // GALLERY FILTERING
-// =========================
 
 const galleryFilters = document.querySelectorAll(".gallery-filter");
 const galleryItems = document.querySelectorAll(".gallery-item");
