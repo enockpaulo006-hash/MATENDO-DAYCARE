@@ -1,5 +1,4 @@
 
-// =========================
 // GALLERY FILTERING
 
 const galleryFilters = document.querySelectorAll(".gallery-filter");
