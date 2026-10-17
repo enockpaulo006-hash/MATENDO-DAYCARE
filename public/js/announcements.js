@@ -1,6 +1,6 @@
 // =========================
 // FIRESTORE ANNOUNCEMENTS
-// =========================
+
 
 import {
     collection,
