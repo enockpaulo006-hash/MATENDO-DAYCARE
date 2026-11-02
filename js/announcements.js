@@ -1,7 +1,4 @@
-// =========================
 // FIRESTORE ANNOUNCEMENTS
-// =========================
-
 import {
     collection,
     getDocs,
