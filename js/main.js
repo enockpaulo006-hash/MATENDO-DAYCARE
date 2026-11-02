@@ -136,10 +136,7 @@ Please guide me on the official admission process and form requirements.`;
         window.open(whatsappURL, "_blank", "noopener,noreferrer");
     });
 }
-
-// =========================
 // AUTOMATIC FOOTER YEAR
-
 const currentYear = document.getElementById("currentYear");
 
 if (currentYear) {
