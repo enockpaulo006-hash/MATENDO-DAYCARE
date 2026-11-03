@@ -27,9 +27,7 @@ galleryFilters.forEach((button) => {
 });
 
 
-// =========================
 // CONTACT FORM
-// =========================
 
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
