@@ -1,4 +1,3 @@
-// =========================
 // FIREBASE CONFIGURATION
 
 import { initializeApp } from
