@@ -175,12 +175,9 @@ body {
     }
 }
 
-/* =================================
-   SCHOOL INTRODUCTION
-================================= */
-
+/* SCHOOL INTRODUCTION*/
 .school-intro {
-    background-color: #fff;
+    background-color: #f5ecec;
 }
 
 .section-subtitle {
@@ -203,7 +200,7 @@ body {
 
 .intro-content p {
     font-size: 15px;
-    color: #666;
+    color: #737171;
     margin-bottom: 15px;
 }
 
