@@ -69,10 +69,8 @@ if (contactForm && formFeedback) {
 }
 
 
-// =========================
-// ADMISSION FORM
-// =========================
 
+// ADMISSION FORM
 const admissionForm = document.getElementById("admissionForm");
 const admissionFeedback = document.getElementById("admissionFeedback");
 
