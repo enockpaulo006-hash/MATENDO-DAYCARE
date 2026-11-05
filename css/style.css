@@ -1691,10 +1691,7 @@ body {
 }
 
 
-/* =========================
-   CONTACT PAGE
-========================= */
-
+/* CONTACT PAGE */
 .contact-hero {
     background: linear-gradient(135deg, #fff3e0, #ffe0b2);
     padding: 65px 20px;
@@ -1917,11 +1914,7 @@ body {
     }
 }
 
-
-/* =========================
-   ADMISSION PAGE
-========================= */
-
+/*ADMISSION PAGE*/
 .admission-hero {
     padding: 70px 20px;
     text-align: center;
