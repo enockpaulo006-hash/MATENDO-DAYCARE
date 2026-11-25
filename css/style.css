@@ -1693,7 +1693,7 @@ body {
 
 /* CONTACT PAGE */
 .contact-hero {
-    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    background: linear-gradient(135deg, #fff3e0, #fdd79d);
     padding: 65px 20px;
     text-align: center;
 }
@@ -1722,7 +1722,7 @@ body {
 
 .contact-section {
     padding: 65px 15px;
-    background: #fff;
+    background: #f9eeee;
 }
 
 .contact-section h2,
